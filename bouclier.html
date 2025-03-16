@@ -7,6 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+		<script src="scripts.js" defer></script>
 	</head>
 	<body>
 		<audio src="son/bruitage ouverture de tombe.mp3" id="element"></audio>
@@ -44,7 +45,8 @@
 				</div>
 				<img src="assets/20211015152428000000_20210205094735000000_415.png" alt="imgill2" class="illul" id="son">
 			</div>
-			<button class="butMotion">Regarder notre stop-motion pour retracer certaines scènes de l'histoire</button>
+			<a href="#video"><button class="butMotion">Regarder notre stop-motion pour retracer certaines scènes de l'histoire</button></a>
+			<video src="video/StopMotion.mp4" autoplay loop muted class="video" id="video"></video>
 			<br>
 			<br>
 			<br>
@@ -52,26 +54,6 @@
 			<br>
 			<br>
 			<br>
-			<script>
-				var element = document.getElementById('element'); // on récupère l'élément qui sera survolé pour jouer le son
-				console.log(element)
-				var son = document.getElementById('son'); // on récupère l'élément <audio>
-				console.log(son)
-				 
-				// element.onmouseover = function(){ // lorsque le div est survolé
-				// 	son.play(); // on joue le son
-				// 	console.log("c genial")
-				// };
-
-				element.addEventListener('click', () => {
-					console.log("c genial")
-					son.play()
-				})
-				 
-				// element.onmouseout = function(){ // lorsque la souris quitte le div
-				// 	son.pause(); // on met en pause le son
-				// };
-			</script>
 		</main>
 	</body>
 </html>

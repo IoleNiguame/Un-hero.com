@@ -1,0 +1,179 @@
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #F8FFF2;
+}
+
+.header {
+	width: 100%;
+	height: 14vh;
+	background-color: #FFBF50;
+}
+
+.header .div_title {
+	font-size: 6vh;
+	float: right;
+	font-family: serif;
+	margin-right: 20vh;
+}
+
+.droite {
+	display: flex;
+	flex-direction: column;
+	float: right;
+}
+
+.liste_li {
+	list-style-type: none;
+}
+
+.limg img {
+	height: 7vh;
+	float: right;
+}
+
+.simg {
+	float: right;
+	height: 4vh;
+	transition: all 0.2s;
+
+}
+
+.search h2 {
+	float: left;
+	font-family: sans-serif;
+	font-size: 3vh;
+	margin-right: 1vh;
+	margin-top: 0.2vh;
+}
+
+.search {
+	margin-top: 1vh;
+}
+
+.search:hover .simg {
+	transform: rotate(0.2turn);
+}
+
+.search:hover h2 {
+	text-decoration: underline;
+}
+
+.exp {
+	float: left;
+	margin-left: 1.5vh;
+	margin-top: 1.5vh;
+	font-size: 3vh;
+}
+
+.main h1 {
+	font-family: 'Cutive', serif;
+	font-size: 10vh;
+	margin: 5vh;
+	margin-top: 7vh;
+}
+
+.txt {
+	float: left;
+	width: 100vh;
+	font-family: sans-serif;
+	font-size: 3vh;
+	margin-left: 6vh;
+}
+
+.illu {
+	width: 80vh;
+	float: right;
+	margin-right: 25vh;
+}
+
+.illul {
+	width: 70vh;
+	float: right;
+	margin-right: 25vh;
+}
+
+.liensAv {
+	background: #d3f165;
+	text-decoration: none;
+	font-size: 4vh;
+	border: 0;
+}
+
+.liensAv:hover {
+	background: #f1ef65;
+}
+
+.planches {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5vh;
+}
+
+.planches img {
+	height: 40vh;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.txtt {
+	float: left;
+	width: 130vh;
+	font-family: sans-serif;
+	font-size: 3vh;
+	margin-left: 6vh;
+	margin-top: 6vh;
+}
+
+.covers {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5vh;
+}
+
+.coveri {
+    transform: translateX(-3000px);
+	height: 0vh;
+	transition: all 0.5s;
+}
+
+.coverit {
+	height: 40vh;
+    transform: translateX(0px);
+}
+
+.coverit:hover {
+	transform: rotate(0.04turn);
+}
+
+.ttxt {
+	float: left;
+	width: 90vh;
+	font-family: sans-serif;
+	font-size: 3vh;
+	margin-left: 6vh;
+	margin-top: 6vh;
+}
+
+.butMotion {
+	width: 60vh;
+	float: left;
+	margin-left: 10vh;
+	border: 0;
+	background-color: #64eeb2;
+	font-size: 4vh;
+	border-radius: 15px;
+	padding: 3vh;
+	transition: all 0.3s;
+}
+
+.butMotion:hover {
+	border-radius: 0;
+}

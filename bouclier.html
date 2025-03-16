@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Un_hero.com</title>
+		<link href="CSS/style.css" rel="stylesheet"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<audio src="son/bruitage ouverture de tombe.mp3" id="element"></audio>
+		
+		<header class="header">
+			<div class="exp">
+				<i>Héros, de l'antiquité à aujourd'hui, <br>dans les histoires, romans<br> ou BD, notre site pour vous guider !</i>
+			</div>
+			<div class="droite">
+				<nav>
+					<ul class="liste_li">
+						<li class="limg"><img src="assets/insta_logo.png"></img></li>
+						<li class="limg"><img src="assets/logo_facebook2.png"></img></li>
+						<li class="limg"><img src="assets/x_logo2.png"></img></li>
+					</ul>
+				</nav>
+				<div class="search">
+					<h2>Rechercher mon héros</h2>
+					<img src="assets/search.png" alt="image de loupe logo" class="simg">
+				</div>
+			</div>
+			<div class="div_title">
+				<h1>Héros à la une !</h1>
+			</div>
+		</header>
+		<main class="main">
+			<h1>Le Bouclier d'Achille :</h1>
+			<div class="sub">
+				<div class="txt">
+					Dans le 42ᵉ tome des aventures d'Alix, intitulé "Le Bouclier d'Achille", l'intrigue débute sur l'île d'Ithaque, où Arbacès, ennemi juré d'Alix, découvre des parchemins révélant l'emplacement de la tombe d'<a href="https://fr.wikipedia.org/wiki/Achille">Achille</a>. Selon la légende, quiconque s'empare des armes du héros mythologique sera reconnu comme chef, offrant ainsi une opportunité de soulever la Grèce contre la domination romaine.
+					<br>
+					À un autre endroit, Alix et son fidèle compagnon Enak quittent l'Égypte pour rejoindre Jules César, engagé dans une guerre civile contre Pompée en Thessalie. Informés des intentions d'Arbacès, ils se lancent à sa poursuite pour empêcher la résurgence d'une rébellion grecque. Leur quête les conduit à Mycènes, où ils découvrent une petite armée secrète, les descendants des Myrmidons, qui veillent à la protection du tombeau d'Achille.
+					<br>
+					L'affrontement final entre Alix et Arbacès est marqué par l'intervention symbolique du bouclier d'Achille. Ce dernier, doté d'une aura quasi mystique, semble refuser de protéger Arbacès lors du duel, accentuant sa dimension légendaire.
+				</div>
+				<img src="assets/20211015152428000000_20210205094735000000_415.png" alt="imgill2" class="illul" id="son">
+			</div>
+			<button class="butMotion">Regarder notre stop-motion pour retracer certaines scènes de l'histoire</button>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<script>
+				var element = document.getElementById('element'); // on récupère l'élément qui sera survolé pour jouer le son
+				console.log(element)
+				var son = document.getElementById('son'); // on récupère l'élément <audio>
+				console.log(son)
+				 
+				// element.onmouseover = function(){ // lorsque le div est survolé
+				// 	son.play(); // on joue le son
+				// 	console.log("c genial")
+				// };
+
+				element.addEventListener('click', () => {
+					console.log("c genial")
+					son.play()
+				})
+				 
+				// element.onmouseout = function(){ // lorsque la souris quitte le div
+				// 	son.pause(); // on met en pause le son
+				// };
+			</script>
+		</main>
+	</body>
+</html>
